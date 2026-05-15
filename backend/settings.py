@@ -22,12 +22,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-temp-for-local")
 
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "job-portal-production-60c4.up.railway.app",
-]
-
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS","").split(",")
 # ================= APPLICATIONS =================
 
 INSTALLED_APPS = [
