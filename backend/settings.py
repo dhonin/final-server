@@ -147,16 +147,13 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:5174",
-    "http://127.0.0.1:5174",
-    "https://frontend-job-portal-six.vercel.app",
+    
 ]
 
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://frontend-job-portal-six.vercel.app",
+    
     "final-server-production-df0e.up.railway.app",
 ]
 
