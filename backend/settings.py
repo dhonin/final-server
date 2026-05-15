@@ -22,7 +22,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-temp-for-local")
 
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS","").split(",")
 
 # ================= APPLICATIONS =================
 
@@ -158,6 +158,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://frontend-job-portal-six.vercel.app",
+    "final-server-production-df0e.up.railway.app",
 ]
 
 # ================= EMAIL =================
